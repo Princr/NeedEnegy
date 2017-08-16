@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="https://nehagirme.wordpress.com/xmlrpc.php">
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Electromagnetic Flowmeter Design &#8211; Neha Girme</title>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Neha Girme &raquo; Feed" href="https://nehagirme.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Neha Girme &raquo; Comments Feed" href="https://nehagirme.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Neha Girme &raquo; Electromagnetic Flowmeter Design Comments Feed" href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1496863874h&ver=4.8.1-RC2-41203"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0-1' href='https://s2.wp.com/_static/??-eJyFkNEOgjAMRX/IuRgR4oPxW7bRwKDdFlqC/L1DMSZq8KVp03tye6unpFwMAkE0jSrh2PjAekoukmLyCPPHtHfMO/0bQ98D6w4kGderx7Qld3EAJS0QcF5TMqJlypqZ/U0AwhdrMTbvG+NQm5p1g9Ea/OuzGmQFQe0NYLYNsoVRKl/U0rY502ac55usTQMwq1zJj7TmW7grXQ7FuaxOVXksujupEo3f' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s2.wp.com/_static/??/wp-content/mu-plugins/genericons/genericons/genericons.css,/wp-content/themes/pub/twentysixteen/style.css?m=1493067000j' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='twentysixteen-ie-css'  href='https://s0.wp.com/wp-content/themes/pub/twentysixteen/css/ie.css?m=1448353951h&#038;ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentysixteen-ie8-css'  href='https://s0.wp.com/wp-content/themes/pub/twentysixteen/css/ie8.css?m=1493067000h&#038;ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentysixteen-ie7-css'  href='https://s0.wp.com/wp-content/themes/pub/twentysixteen/css/ie7.css?m=1448353951h&#038;ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-8-1' href='https://s0.wp.com/_static/??-eJx9j+EKwjAMhF/IGoVN5w/xWdoSu0ralDVl7u3tVJwi7N99yd2RwJiU5SgYBaTHgBlSMSBjHUzZ3wUxgs0ZskyEakyWw7byBjxEFl+z+SNei6/GUFSi4nz1OGRFbLV4jj+grqT9sBYd0BC7Kt3zkgXXQtrO5UYPi/qzvx/uG3DERtNsuITzvjntjt2h7drbA5CNaxo=' type='text/css' media='all' />
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFjt0OgjAMRl/IMTEQuTE+C8wKnezHtRPx6S2JXhiJJk2afD09rZ6iQm/GfALSVuqaIc2vVlja6F+ActinlqFw6N+wCZ7B88K60OEIKhOktpdMROewwsVA7IBIoJXp50vobwjTX8wCx9ZcVALCx5eVB5B7OuZO8yTBTHhnAL94BnZjLQtHdyirZr9ryrra2if2RG5x'></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621h' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://nehagirme.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='ENvent TwoPointZero' href='https://nehagirme.wordpress.com/2011/10/26/envent-twopointzero/' />
+<link rel='next' title='BEAGLE BOARD: CROSS-COMPILATION' href='https://nehagirme.wordpress.com/2011/12/26/beagle-board-cross-compilation/' />
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/" />
+<link rel='shortlink' href='http://wp.me/p1jr2M-3f' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fnehagirme.wordpress.com%2F2011%2F11%2F19%2Felectromagnetic-flowmeter-design%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fnehagirme.wordpress.com%2F2011%2F11%2F19%2Felectromagnetic-flowmeter-design%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Electromagnetic Flowmeter Design" />
+<meta property="og:url" content="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/" />
+<meta property="og:description" content="Hey, this is my second Sensor Design post! Working great! In this article you can see the steps involved in designing a demonstrable magnetic flow sensor for conducting fluids and demonstrate the a…" />
+<meta property="article:published_time" content="2011-11-19T12:12:59+00:00" />
+<meta property="article:modified_time" content="2016-08-02T11:22:43+00:00" />
+<meta property="og:site_name" content="Neha Girme" />
+<meta property="og:image" content="https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png" />
+<meta property="og:image:width" content="946" />
+<meta property="og:image:height" content="617" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:text:title" content="Electromagnetic Flowmeter Design" />
+<meta name="twitter:image" content="https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg?w=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+<link rel='openid.server' href='https://nehagirme.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://nehagirme.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://nehagirme.wordpress.com/osd.xml" title="Neha Girme" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Neha Girme" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://nehagirme.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="Electromagnetic Flowmeter Design | Neha Girme on WordPress.com" />
+<meta name="description" content="Hey, this is my second Sensor Design post! Working great! In this article you can see the steps involved in designing a demonstrable magnetic flow sensor for conducting fluids and demonstrate the ability of the sensor to sense the direction of the flow as well. This device should be able to demonstrate the principle function&hellip;" />
+ 		<script type="text/javascript">
+		var _ipw_custom = {
+				wordAds: '0',
+				adSafe: '0',
+				domain: 'nehagirme.wordpress.com',
+				pageURL: 'https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/'
+			};
+		</script>
+		<script type="text/javascript" src="//s.pubmine.com/head.js"></script>
+		<script type="text/javascript" src="https://static.criteo.net/js/ld/publishertag.js"></script>
+		<link rel='dns-prefetch' href='//s.pubmine.com' />
+		<link rel='dns-prefetch' href='//x.bidswitch.net' />
+		<link rel='dns-prefetch' href='//static.criteo.net' />
+		<link rel='dns-prefetch' href='//ib.adnxs.com' />
+		<link rel='dns-prefetch' href='//aax.amazon-adsystem.com' />
+		<link rel='dns-prefetch' href='//bidder.criteo.com' />
+		<link rel='dns-prefetch' href='//cas.criteo.com' />
+		<link rel='dns-prefetch' href='//gum.criteo.com' />
+		<link rel='dns-prefetch' href='//ads.pubmatic.com' />
+		<link rel='dns-prefetch' href='//gads.pubmatic.com' />
+		<link rel='dns-prefetch' href='//tpc.googlesyndication.com' />
+		<link rel='dns-prefetch' href='//ad.doubleclick.net' />
+		<link rel='dns-prefetch' href='//googleads.g.doubleclick.net' />
+		<link rel='dns-prefetch' href='//www.googletagservices.com' />
+		<link rel='dns-prefetch' href='//cdn.switchadhub.com' />
+		<link rel='dns-prefetch' href='//delivery.g.switchadhub.com' />
+		<link rel='dns-prefetch' href='//delivery.swid.switchadhub.com' /><link rel="amphtml" href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/amp/" /><style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+
+<body class="post-template-default single single-post postid-201 single-format-standard custom-background mp6 customizer-styles-applied highlander-enabled highlander-light">
+<div id="page" class="site">
+	<div class="site-inner">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-header-main">
+				<div class="site-branding">
+					
+											<p class="site-title"><a href="https://nehagirme.wordpress.com/" rel="home">Neha Girme</a></p>
+									</div><!-- .site-branding -->
+
+							</div><!-- .site-header-main -->
+
+											<div class="header-image">
+					<a href="https://nehagirme.wordpress.com/" rel="home">
+						<img src="https://defaultcustomheadersdata.files.wordpress.com/2016/07/blur.jpg?resize=1200,280" srcset="" sizes="" width="1200" height="280" alt="Neha Girme">
+					</a>
+				</div><!-- .header-image -->
+					</header><!-- .site-header -->
+
+		<div id="content" class="site-content">
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		
+<article id="post-201" class="post-201 post type-post status-publish format-standard hentry category-sensor-design">
+	<header class="entry-header">
+		<h1 class="entry-title">Electromagnetic Flowmeter Design</h1>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<h3>Hey, this is my second Sensor Design post! Working great!</h3>
+<h3>In this article you can see the steps involved in designing a <span style="text-decoration:underline;">demonstrable magnetic flow sensor for conducting fluids and demonstrate the ability of the sensor to sense the direction of the flow as well. This device should be able to demonstrate the principle function of magnetic flow meter, the wave forms of electromagnet drive, induced EMF and synchronous detection</span>.</h3>
+<h3><span style="color:#ff0000;"><strong>What is a Magnetic Flowmeter??</strong></span></h3>
+<h4>A magnetic flow meter is a volumetric flow meter, which does not have any moving parts and is ideal for wastewater applications or any dirty liquid, which is conductive, or water based.</h4>
+<h4>In a magnetic flow meter, the liquid acts as a conductor as it flows through the pipe. This induces a voltage, which is proportional to the average flow velocity &#8211; the faster the flow rate, the higher the voltage. This voltage is picked up by sensing electrodes mounted in the meter tube and sent to the transmitter which takes the voltage and calculates the flow rate based on the cross sectional area of the meter tube</h4>
+<figure data-shortcode="caption" id="attachment_204" style="width: 310px" class="wp-caption aligncenter"><a href="https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg"><img data-attachment-id="204" data-permalink="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/magflowmeter/" data-orig-file="https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg" data-orig-size="497,411" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="magflowmeter" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg?w=300&#038;h=248" data-large-file="https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg?w=497" class="size-medium wp-image-204" title="magflowmeter" src="https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg?w=300&#038;h=248" alt="" width="300" height="248" srcset="https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg?w=300&amp;h=248 300w, https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg?w=150&amp;h=124 150w, https://nehagirme.files.wordpress.com/2011/11/magflowmeter.jpg 497w" sizes="(max-width: 300px) 85vw, 300px" /></a><figcaption class="wp-caption-text">Electromagnetic Flowmeter</figcaption></figure>
+<h3><span style="font-family:'Times New Roman', serif;color:#33cccc;"><span style="font-size:small;"><span style="font-size:medium;"><strong>PRINCIPLE OF OPERATION:</strong></span></span></span></h3>
+<h4><strong>The operation of a magnetic flow meter is based upon Faraday&#8217;s Law, which states that the voltage induced across any conductor as it moves at right angles through a magnetic field is proportional to the velocity of that conductor.</strong></h4>
+<p><span style="color:#800080;"><strong>Faraday&#8217;s Formula:</strong></span></p>
+<p><span style="color:#0000ff;"><strong><u>E </u></strong><u>is proportional to <strong>V </strong>x <strong>B </strong>x <strong>D</strong></u></span></p>
+<h4>Where:<br />
+<strong>E</strong><strong> </strong>= The voltage generated in a conductor<br />
+<strong>V</strong><strong> </strong>= The velocity of the conductor<br />
+<strong>B</strong><strong> </strong>= The magnetic field strength<br />
+<strong>D</strong><strong> </strong>= The length of the conductor</h4>
+<ul>
+<li>
+<h4>Maximum EMF is induced when the electrodes are placed across the diameter of the pipe and the direction of the flow.</h4>
+</li>
+<li>
+<h4>Thedirection of the magnetic field and the line joining the electrodes are all mutually perpendicular to each other.since the liquid is in continuous contact with the element of conductor between the electrodes,there will be an equivalent of short circuiting effect.</h4>
+</li>
+<li>
+<h4>Thus the actual voltage across the electrodes will be less than VBD.</h4>
+</li>
+<li>
+<h4>If the field extends over the large area ,this effect is less at the central portion of the field</h4>
+</li>
+</ul>
+<figure data-shortcode="caption" id="attachment_213" style="width: 310px" class="wp-caption aligncenter"><a href="https://nehagirme.files.wordpress.com/2011/11/mag11.jpg"><img data-attachment-id="213" data-permalink="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/mag1-2/" data-orig-file="https://nehagirme.files.wordpress.com/2011/11/mag11.jpg" data-orig-size="508,489" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="mag1" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2011/11/mag11.jpg?w=300&#038;h=288" data-large-file="https://nehagirme.files.wordpress.com/2011/11/mag11.jpg?w=508" class="size-medium wp-image-213" title="mag1" src="https://nehagirme.files.wordpress.com/2011/11/mag11.jpg?w=300&#038;h=288" alt="" width="300" height="288" srcset="https://nehagirme.files.wordpress.com/2011/11/mag11.jpg?w=300&amp;h=288 300w, https://nehagirme.files.wordpress.com/2011/11/mag11.jpg?w=150&amp;h=144 150w, https://nehagirme.files.wordpress.com/2011/11/mag11.jpg 508w" sizes="(max-width: 300px) 85vw, 300px" /></a><figcaption class="wp-caption-text">System Overview</figcaption></figure>
+<p><span style="color:#33cccc;">Read Further for Details!!!</span></p>
+<p>Finally, I could find some pictures of the running model of magnetic flow meter which I had developed! Quality of the image is not quite good but still I would post them!</p>
+<p><img data-attachment-id="433" data-permalink="https://nehagirme.wordpress.com/wp-1470063990691-jpg/" data-orig-file="https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=840" data-orig-size="1280,853" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="wp-1470063990691.jpg" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=840?w=300" data-large-file="https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=840?w=840" class="alignnone size-full wp-image-433" src="https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=840" alt="wp-1470063990691.jpg" srcset="https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=840 840w, https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=150 150w, https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=300 300w, https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=768 768w, https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg?w=1024 1024w, https://nehagirme.files.wordpress.com/2016/08/wp-1470063990691.jpg 1280w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"   /><img data-attachment-id="435" data-permalink="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/magnetic-fm-setup-2/" data-orig-file="https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png?w=840" data-orig-size="946,617" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="MAGNETIC FM SETUP" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png?w=840?w=300" data-large-file="https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png?w=840?w=840" class="alignnone size-full wp-image-435" src="https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png?w=840" alt="MAGNETIC FM SETUP" srcset="https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png?w=840 840w, https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png?w=150 150w, https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png?w=300 300w, https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png?w=768 768w, https://nehagirme.files.wordpress.com/2011/11/magnetic-fm-setup1.png 946w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px"   /></p>
+<p><span id="more-201"></span></p>
+<h2 style="background:white;"></h2>
+<ul>
+<li><span style="color:#0000ff;"> <strong>POWER SUPPLY:</strong></span>&nbsp;
+<p><strong>The circuit needs 12V power supply for generation of biphasic waveform and the amplifier needs +6V and -6V supply. Sample and hold circuit needs dual power supply of 5 volts</strong></li>
+</ul>
+<ul>
+<li><span style="color:#0000ff;"><strong>BIPHASIC WAVEFORM GENERATOR:</strong></span>
+<p><strong>The driving circuitry used to drive the coils of the sensor. The clock for IC4017 is generated using Schmitt trigger inverter 74HC14.the IC4017 gives 10 decoded outputs . </strong><strong>Out of them 3 outputs are taken as reference for measurement for sample and hold circuitry; decoded output 3,6 and 9. The four channel push-pull driver IC L293D is used to drive the coils.</strong></li>
+</ul>
+<p><strong>          The output of this driving circuitry can be obtained as</strong></p>
+<p align="JUSTIFY"><a href="https://nehagirme.files.wordpress.com/2011/11/mag32.jpg"><img data-attachment-id="217" data-permalink="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/mag3-3/" data-orig-file="https://nehagirme.files.wordpress.com/2011/11/mag32.jpg" data-orig-size="419,178" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="mag3" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2011/11/mag32.jpg?w=300&#038;h=127" data-large-file="https://nehagirme.files.wordpress.com/2011/11/mag32.jpg?w=419" class="aligncenter size-medium wp-image-217" title="mag3" src="https://nehagirme.files.wordpress.com/2011/11/mag32.jpg?w=300&#038;h=127" alt="" width="300" height="127" srcset="https://nehagirme.files.wordpress.com/2011/11/mag32.jpg?w=300&amp;h=127 300w, https://nehagirme.files.wordpress.com/2011/11/mag32.jpg?w=150&amp;h=64 150w, https://nehagirme.files.wordpress.com/2011/11/mag32.jpg 419w" sizes="(max-width: 300px) 85vw, 300px" /></a></p>
+<p><strong>     <span style="color:#0000ff;">Why Biphasic waveform is used to drive the coils??</span></strong></p>
+<ol>
+<li>Sine wave is a continuously varying waveform. And if this signal is given to coils then the magnetic field generated will be continuously varying and that may create problems in measurement of output.</li>
+<li>Square wave consist of either positive or negative peaks but in this case we need the waveform generating positive as well as negative peaks.</li>
+<li>Due to ionic contact between electrodes and conductor some electrochemical voltages and currents are generated. These may interfere in the measurement of EMF due to water .So to avoid these errors,biphasic electromagnetic field is used.</li>
+<li>Rapidly changing polarity of currents ensure that, electrodes are not actively corroded.</li>
+<li>Due to symmetrically opposite currents errors due to charging time of boundary layer capacitance are also avoided.</li>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color:#0000ff;"><strong>SENSOR:</strong></span></li>
+</ul>
+<p>The flow meter sensor consists of two coils with specific number of turns and two sensing electrodes made up of stainless steel 304 (SS304). As the coil resistance is very small the current variation in coil is very negligible.The sensing electrodes placed diametrically opposite to pick up maximum signal. This signal is very small i.e. in mV which is given to 2 stage amplifier.</p>
+<p><span style="font-family:'Times New Roman', serif;color:#0000ff;"><span style="font-size:medium;"><strong>SPECIFICATIONS:</strong></span></span></p>
+<ol>
+<li>Number of turns in coil: 850</li>
+<li>Coil resistance: 50ohms each</li>
+<li>Electrodes Material: Stainless steel 304,nonmagnetic.</li>
+<li>Pipe size: 1inch</li>
+<li>Pipe material: PVC.</li>
+<li>Constant voltage source used</li>
+</ol>
+<ul>
+<li><span style="color:#0000ff;"><strong>AMPLIFIER CIRCUIT:</strong></span></li>
+</ul>
+<p><strong> </strong>This is a two stage circuitry consisting of instrumentation amplifier AD620 with variable gain and a variable gain amplifier OP07. As the signal coming from the sensor is very small in magnitude the signal needs to be amplified considerably.</p>
+<ul>
+<li><span style="color:#0000ff;"><strong>SAMPLE AND HOLD CIRCUIT:</strong></span></li>
+</ul>
+<p align="JUSTIFY">The decoded output coming from decoded IC 4017 is taken out for measurement from biphasic waveform generator circuitry. The positive peak and ground signal is sampled and given to the differentiator. The o/p of differentiator is again sampled and hold with the use of analog switches and high input impedance operational amplifier.</p>
+<ul>
+<li><span style="color:#0000ff;"><strong>DIGITAL PANEL METER:</strong></span></li>
+</ul>
+<p align="JUSTIFY">LCD digital panel meter is used to display the signal of flow meter. It needs 9V power supply.</p>
+<p align="JUSTIFY"><span style="font-family:'Times New Roman', serif;color:#0000ff;"><span style="font-size:small;"><span style="font-size:medium;"><strong>CONSTRUCTION:</strong></span></span></span></p>
+<p>The magnetic flow meter consists of a flow tube, which is a non-magnetic pipe lined with an insulating material. Embedded within the flow tube are a pair of magnetic coils, positioned 180° from each. Positioned 90° to the center line of the magnetic field are a pair of electrodes which penetrate the pipe and its lining.  An integral or remotely mounted signal converter amplifies the signal and converts it into a standard analog signal (4 to 20 mA) and/or pulse output representing a predetermined volumetric unit.</p>
+<p><a href="https://nehagirme.files.wordpress.com/2011/11/mag6.png"><img data-attachment-id="221" data-permalink="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/mag6/" data-orig-file="https://nehagirme.files.wordpress.com/2011/11/mag6.png" data-orig-size="570,319" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="mag6" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2011/11/mag6.png?w=300&#038;h=167" data-large-file="https://nehagirme.files.wordpress.com/2011/11/mag6.png?w=570" class="aligncenter size-medium wp-image-221" title="mag6" src="https://nehagirme.files.wordpress.com/2011/11/mag6.png?w=300&#038;h=167" alt="" width="300" height="167" srcset="https://nehagirme.files.wordpress.com/2011/11/mag6.png?w=298&amp;h=167 298w, https://nehagirme.files.wordpress.com/2011/11/mag6.png?w=150&amp;h=84 150w, https://nehagirme.files.wordpress.com/2011/11/mag6.png 570w" sizes="(max-width: 300px) 85vw, 300px" /></a></p>
+<p align="JUSTIFY"><span style="font-family:'Times New Roman', serif;color:#0000ff;"><span style="font-size:medium;"><strong>SIZE OF THE TUBE:</strong></span></span></p>
+<p align="JUSTIFY">The size of the tube used is a one inch diameter pipe. One of the reasons for using this size is that it is easy for demonstration purpose. The tube is coupled with variable pump or series motor pump so that the flow can be varied. For calibration purpose a precalibrated drum or an existing commercial magnetic flow meter or both can be used for calibrating and checking purpose.</p>
+<p><span style="font-family:'Times New Roman', serif;color:#0000ff;"><span style="font-size:medium;"><strong>ELECTROCHEMICAL EFFECTS:</strong></span></span></p>
+<p>A magneto-inductive flow meter includes a measuring tube containing an electrode that is provided with an electro-conductive coating, as a result of which the galvanic contact between the electrode and the medium that flows through the measuring tube is indirect, i.e. via the electro-conductive coating. This produces an electrode that offers mechanical strength and is conducive to interference-free measuring signals.</p>
+<ul>
+<li>Metal electrodes that are in direct contact with the flowing medium form an electrochemical boundary layer, capable of producing electrochemical direct-current voltages whose order of magnitude may be several 100 mV.</li>
+<li>These electrochemical direct-current voltages can change quite rapidly, for instance as a function of variations in the local flow rate of the medium at the electrodes due to turbulences, of operating-pressure fluctuations, of the pH value of the medium, of the composition of the medium especially while chemical reactions are still going on in the medium, of solid particles carried by or particles suspended in the medium and interfering with the boundary layer on the electrodes, or of solid particles in contact with or indeed impinging on the electrodes.</li>
+<li>All these factors lead to statistical fluctuations of the electrochemical direct current at the electrodes with amplitudes ranging from a few μV to several 10 mV. These statistical voltage fluctuations are also referred to as random noise.</li>
+</ul>
+<p><span style="font-family:'Times New Roman', serif;color:#993366;"><span style="font-size:medium;"><strong>PROBLEMS DUE TO MEASUREMENT OF ELECTROLYTIC CAPACITANCE:</strong></span></span></p>
+<p><strong> </strong>An magnetic flow meter is provided which includes a reference electrode configured to electrically couple process fluid flowing within a flow tube of the flow meter. The reference electrode is adapted to measure potential of the process fluid. A current limiter is configured to limit current flow through the reference electrode and thereby reduce corrosion of the reference electrode.</p>
+<p><span style="color:#993366;"><span style="font-family:Times New Roman, serif;"><span style="font-size:medium;"><strong>NEED FOR HIGH INPUT IMPEDENCE DIFFERENTIAL AMPLIFIER</strong></span></span>:</span></p>
+<p>Since we are using biphasic excitation of magnetic field with no generation of magnetic field in between and we provide synchronous sampling of the generated emf, there is a need of having a very high input impedence differential amplifier. Another reason being the choice of electrode we opt. in this case we are using the stainless steel electrodes.</p>
+<p><span style="color:#993366;"><span style="font-family:Times New Roman, serif;"><span style="font-size:medium;"><strong>NEED FOR BASELINE CORRECTION</strong></span></span>:</span></p>
+<p>Baseline correction is very important to get a steady signal. The baseline subtraction is done by inducing emf during zero magnetic field is subtracted from the observed emf during the steady state of the magnetic field.</p>
+<p><a href="https://nehagirme.files.wordpress.com/2011/11/mag71.png"><img data-attachment-id="223" data-permalink="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/mag7-2/" data-orig-file="https://nehagirme.files.wordpress.com/2011/11/mag71.png" data-orig-size="491,301" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="mag7" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2011/11/mag71.png?w=300&#038;h=183" data-large-file="https://nehagirme.files.wordpress.com/2011/11/mag71.png?w=491" class="aligncenter size-medium wp-image-223" title="mag7" src="https://nehagirme.files.wordpress.com/2011/11/mag71.png?w=300&#038;h=183" alt="" width="300" height="183" srcset="https://nehagirme.files.wordpress.com/2011/11/mag71.png?w=300&amp;h=183 300w, https://nehagirme.files.wordpress.com/2011/11/mag71.png?w=150&amp;h=92 150w, https://nehagirme.files.wordpress.com/2011/11/mag71.png 491w" sizes="(max-width: 300px) 85vw, 300px" /></a>You can see there are some spikes at the edges of the pulse.</p>
+<p><span style="color:#0000ff;"><span style="font-size:medium;"><strong>PROBLEMS FACED WHILE IMPLEMENTING</strong></span><span style="font-size:medium;">:</span></span></p>
+<ul>
+<li>Coil size</li>
+<li>Leakage</li>
+<li>Material for electrodes</li>
+<li>Grounding trouble: The ground conductor should not transmit any interference voltages, therefore, do not ground any other electrical devices together with this conductor.</li>
+</ul>
+<p style="text-align:left;" align="CENTER"><span style="font-family:'Times New Roman', serif;color:#0000ff;"><span style="font-size:medium;"><strong>OBSERVATIONS:</strong></span></span></p>
+<ul>
+<li>It is observed that due to the ionic contact with the unit-moving element, certain electrochemical voltages and currents are generated.</li>
+<li>These may interfere the measurement of the EMF generated due to fluid movement.</li>
+<li>It is necessary to generate a biphasic electromagnetic field.</li>
+<li>The symmetrical currents in the opposite direction ensure that the sensing electrodes are not corroded.</li>
+<li>The rapidly changing alternating polarity also avoids errors due to the charging time required by the boundary layer capacitance.</li>
+</ul>
+<figure data-shortcode="caption" id="attachment_224" style="width: 310px" class="wp-caption aligncenter"><a href="https://nehagirme.files.wordpress.com/2011/11/mag8.png"><img data-attachment-id="224" data-permalink="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/mag8/" data-orig-file="https://nehagirme.files.wordpress.com/2011/11/mag8.png" data-orig-size="634,311" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="mag8" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2011/11/mag8.png?w=300&#038;h=147" data-large-file="https://nehagirme.files.wordpress.com/2011/11/mag8.png?w=634" class="size-medium wp-image-224" title="mag8" src="https://nehagirme.files.wordpress.com/2011/11/mag8.png?w=300&#038;h=147" alt="" width="300" height="147" srcset="https://nehagirme.files.wordpress.com/2011/11/mag8.png?w=300&amp;h=147 300w, https://nehagirme.files.wordpress.com/2011/11/mag8.png?w=600&amp;h=294 600w, https://nehagirme.files.wordpress.com/2011/11/mag8.png?w=150&amp;h=74 150w" sizes="(max-width: 300px) 85vw, 300px" /></a><figcaption class="wp-caption-text">Output measurement</figcaption></figure>
+<p><img data-attachment-id="436" data-permalink="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/img-20160622-wa0040/" data-orig-file="https://nehagirme.files.wordpress.com/2011/11/img-20160622-wa0040.jpg?w=840" data-orig-size="640,480" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="IMG-20160622-WA0040" data-image-description="" data-medium-file="https://nehagirme.files.wordpress.com/2011/11/img-20160622-wa0040.jpg?w=840?w=300" data-large-file="https://nehagirme.files.wordpress.com/2011/11/img-20160622-wa0040.jpg?w=840?w=640" class="alignnone size-full wp-image-436" src="https://nehagirme.files.wordpress.com/2011/11/img-20160622-wa0040.jpg?w=840" alt="IMG-20160622-WA0040" srcset="https://nehagirme.files.wordpress.com/2011/11/img-20160622-wa0040.jpg 640w, https://nehagirme.files.wordpress.com/2011/11/img-20160622-wa0040.jpg?w=150 150w, https://nehagirme.files.wordpress.com/2011/11/img-20160622-wa0040.jpg?w=300 300w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px"   /></p>
+<ul>
+<li>When magnetic flux lines generated by coils are cut by conductor then corresponding output voltage can be seen from the above waveform. The amplitude of this voltage is proportional to the velocity of the conductor,i.e,flow rate.</li>
+<li><span><span> Total flow can be given by,</span></span></li>
+<li><span><span> Total flow = flow rate X time</span></span></li>
+<li><span><span> The difference between the positive and the negative peaks is proportional to the flow rate. Thus samples are taken at positive, negative and baseline to get the corresponding differential output.</span></span></li>
+</ul>
+<p><a href="https://nehagirme.files.wordpress.com/2011/11/mag7.png"><br />
+</a></p>
+			<style type="text/css">
+			div.wpmrec2x{max-width:610px;}
+			div.wpmrec2x div.u > div{float:left;margin-right:10px;}
+			div.wpmrec2x div.u > div:nth-child(3n){margin-right:0px;}
+			</style>		<div class="wpcnt">
+			<div class="wpa wpmrec wpmrec2x">
+				<span class="wpa-about">Advertisements</span>
+				<div class="u">
+										<script type='text/javascript' id="s26942">
+						(function(g,$){if("undefined"!=typeof g.__ATA){
+							g.__ATA.initAd({collapseEmpty:'after', sectionId:26942, width:300, height:250});
+							g.__ATA.initAd({collapseEmpty:'after', sectionId:114160, width:300, height:250});
+						}})(window,jQuery);
+					</script>
+				</div>
+						<div id="crt-163041971" style="width:300px;height:250px;"></div>
+		<script type="text/javascript">
+		var o = document.getElementById('crt-163041971');
+		if ("undefined"!=typeof Criteo) {
+			var p = o.parentNode;
+			p.style.setProperty('display', 'inline-block', 'important');
+			o.style.setProperty('display', 'block', 'important');
+			Criteo.DisplayAcceptableAdIfAdblocked({zoneid:388248,containerid:"crt-163041971",collapseContainerIfNotAdblocked:true,"callifnotadblocked": function () {var o = document.getElementById('crt-163041971'); o.style.setProperty('display','none','important');o.style.setProperty('visbility','hidden','important'); } });
+		} else {
+			o.style.setProperty('display', 'none', 'important');
+			o.style.setProperty('visibility', 'hidden', 'important');
+		}
+		</script>		<div id="crt-1391251818" style="width:300px;height:250px;"></div>
+		<script type="text/javascript">
+		var o = document.getElementById('crt-1391251818');
+		if ("undefined"!=typeof Criteo) {
+			var p = o.parentNode;
+			p.style.setProperty('display', 'inline-block', 'important');
+			o.style.setProperty('display', 'block', 'important');
+			Criteo.DisplayAcceptableAdIfAdblocked({zoneid:837497,containerid:"crt-1391251818",collapseContainerIfNotAdblocked:true,"callifnotadblocked": function () {var o = document.getElementById('crt-1391251818'); o.style.setProperty('display','none','important');o.style.setProperty('visbility','hidden','important'); } });
+		} else {
+			o.style.setProperty('display', 'none', 'important');
+			o.style.setProperty('visibility', 'hidden', 'important');
+		}
+		</script>
+			</div>
+		</div><div id="jp-post-flair" class="sharedaddy sd-like-enabled"><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-19408528-201-598c092378a56' data-src='//widgets.wp.com/likes/#blog_id=19408528&amp;post_id=201&amp;origin=nehagirme.wordpress.com&amp;obj_id=19408528-201-598c092378a56' data-name='like-post-frame-19408528-201-598c092378a56'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>
+<div class="author-info">
+	<div class="author-avatar">
+		<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />	</div><!-- .author-avatar -->
+
+	<div class="author-description">
+		<h2 class="author-title"><span class="author-heading">Author:</span> Girme Neha</h2>
+
+		<p class="author-bio">
+			Co-founder of TechTrails
+
+Provide services in the field of sensor designing, electronics, embedded systems, IoT. 
+
+Conduct training workshops in IoT and embedded systems. 
+
+I am posting my work and some interesting stuff on my blog! hope u like it!			<a class="author-link" href="https://nehagirme.wordpress.com/author/nehagirme/" rel="author">
+				View all posts by Girme Neha			</a>
+		</p><!-- .author-bio -->
+	</div><!-- .author-description -->
+</div><!-- .author-info -->
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=49&#038;d=&#038;r=G' class='avatar avatar-49' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="https://nehagirme.wordpress.com/author/nehagirme/">Girme Neha</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/" rel="bookmark"><time class="entry-date published" datetime="2011-11-19T17:42:59+00:00">November 19, 2011</time><time class="updated" datetime="2016-08-02T16:52:43+00:00">August 2, 2016</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://nehagirme.wordpress.com/category/sensor-design/" rel="category tag">SENSOR DESIGN</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			72 thoughts on &ldquo;Electromagnetic Flowmeter Design&rdquo;		</h2>
+
+		
+		<ol class="comment-list">
+					<li id="comment-17" class="comment byuser comment-author-justzav even thread-even depth-1 parent highlander-comment">
+			<article id="div-comment-17" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://2.gravatar.com/avatar/5f573c8e567e89dc106dab67c4f7b488?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://justinozavala.wordpress.com' rel='external nofollow' class='url'>justzav</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-17">
+							<time datetime="2013-01-02T18:19:21+00:00">
+								January 2, 2013 at 18:19							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This is great! This is the only one DIY magnetic flowmeter design i&#8217;ve seen. Do you have any pictures? Thank you.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=17#respond' onclick='return addComment.moveForm( "div-comment-17", "17", "respond", "201" )' aria-label='Reply to justzav'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-23" class="comment byuser comment-author-nehagirme bypostauthor odd alt depth-2 highlander-comment">
+			<article id="div-comment-23" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-23">
+							<time datetime="2013-10-28T14:25:59+00:00">
+								October 28, 2013 at 14:25							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thank you.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=23#respond' onclick='return addComment.moveForm( "div-comment-23", "23", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-20" class="comment byuser comment-author-proflowdynamics1806 even thread-odd thread-alt depth-1 parent highlander-comment">
+			<article id="div-comment-20" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f22f27fdf96f9dec57ef579a0f222902?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">proflowdynamics1806</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-20">
+							<time datetime="2013-08-12T18:18:15+00:00">
+								August 12, 2013 at 18:18							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>After visiting so many blogs finally i have found such informative post about magnetic flow meter. The post well describes the things from principle to working of it.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=20#respond' onclick='return addComment.moveForm( "div-comment-20", "20", "respond", "201" )' aria-label='Reply to proflowdynamics1806'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-21" class="comment byuser comment-author-nehagirme bypostauthor odd alt depth-2 highlander-comment">
+			<article id="div-comment-21" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-21">
+							<time datetime="2013-10-28T14:21:18+00:00">
+								October 28, 2013 at 14:21							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thank you! Glad you found it useful!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=21#respond' onclick='return addComment.moveForm( "div-comment-21", "21", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-24" class="comment byuser comment-author-otrcomm even thread-even depth-1 parent highlander-comment">
+			<article id="div-comment-24" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://2.gravatar.com/avatar/837cb039154447cc1fe50df28b74a31a?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://muleindeyard.wordpress.com' rel='external nofollow' class='url'>otrcomm</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-24">
+							<time datetime="2013-12-08T23:06:02+00:00">
+								December 8, 2013 at 23:06							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I am n absolute newbee to electronics, but I would like to build the circuit for the electromagnetic water flow meter you have designed. Could you please post a circuit diagram with components listed? Also, do you know if your design could be integrated with a beaglebone to support remote monitoring via ethernet?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=24#respond' onclick='return addComment.moveForm( "div-comment-24", "24", "respond", "201" )' aria-label='Reply to otrcomm'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-25" class="comment byuser comment-author-nehagirme bypostauthor odd alt depth-2 parent highlander-comment">
+			<article id="div-comment-25" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-25">
+							<time datetime="2013-12-13T22:07:11+00:00">
+								December 13, 2013 at 22:07							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello! I shall send you the circuit details through email. Please leave your mail id. Well, I had designed this circuit like 4 years back so may be i&#8217;ll have to dig into the details and see if the circuit can be integrated for the remote monitoring, shall get back to you regarding same as soon as i find time.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=25#respond' onclick='return addComment.moveForm( "div-comment-25", "25", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-26" class="comment byuser comment-author-nehagirme bypostauthor even depth-3 highlander-comment">
+			<article id="div-comment-26" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-26">
+							<time datetime="2013-12-13T22:10:15+00:00">
+								December 13, 2013 at 22:10							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Well i got ur ID. will get back to u!</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-27" class="comment odd alt thread-odd thread-alt depth-1 parent highlander-comment">
+			<article id="div-comment-27" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/graph.facebook.com/100000033470693/picture?q=type%3Dlarge%26_md5%3De8ae1fddedadd8e7e98e275221f4c5b3&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/gary.crisler.5' rel='external nofollow' class='url'>Gary Crisler</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-27">
+							<time datetime="2014-02-07T22:24:11+00:00">
+								February 7, 2014 at 22:24							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I am teaching  a college level class, we have a unit coming up in  a couple of months. I would like to build/demonstate a working magmeter. Your research on this page is exactly wonderful.  I noticed that you offered some schematics and possibly some photo. I am wondering if you could be generous enough to forward those to me also???  I am an electrical engineer, so I am not going to be irritating you with trival questions.<br />
+Thanks in advance<br />
+Garret<br />
+<a href="mailto:gcrisler@centurytel.net">gcrisler@centurytel.net</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=27#respond' onclick='return addComment.moveForm( "div-comment-27", "27", "respond", "201" )' aria-label='Reply to Gary Crisler'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-28" class="comment byuser comment-author-nehagirme bypostauthor even depth-2 parent highlander-comment">
+			<article id="div-comment-28" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-28">
+							<time datetime="2014-02-08T13:34:51+00:00">
+								February 8, 2014 at 13:34							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Garret,</p>
+<p>Thank you for visiting my blog. I am glad you found my blog useful. I do have my design of a working magnetic flow-meter. I would mail you the details of the schematics shortly. You may revert me back if you have any doubts.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=28#respond' onclick='return addComment.moveForm( "div-comment-28", "28", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-84" class="comment odd alt depth-3 highlander-comment">
+			<article id="div-comment-84" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/graph.facebook.com/v2.2/10154178301906075/picture?q=type%3Dlarge%26_md5%3De5f982a7a086f8dfbd320429d546ff9d&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/app_scoped_user_id/10154178301906075/' rel='external nofollow' class='url'>Lalit Malhotra</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-84">
+							<time datetime="2016-07-27T21:16:06+00:00">
+								July 27, 2016 at 21:16							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi, This is very useful, can you mail me your schematics details at <a href="mailto:lalit55@yahoo.com">lalit55@yahoo.com</a></p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-29" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-29" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/103217848151181969339' rel='external nofollow' class='url'>AIMORE DUTRA NETO</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-29">
+							<time datetime="2014-02-24T06:41:57+00:00">
+								February 24, 2014 at 06:41							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Girme Neha, well done. Very rich informations about his interesting subject. I´ll be very greatful if I would have access to the schematics and more informatons. My e-mail: <a href="mailto:aimoredutra@yahoo.com">aimoredutra@yahoo.com</a>. Thank you.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=29#respond' onclick='return addComment.moveForm( "div-comment-29", "29", "respond", "201" )' aria-label='Reply to AIMORE DUTRA NETO'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-30" class="comment byuser comment-author-acassis odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-30" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/6658c541fb27e86516f7ed746d1e8ad0?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">acassis</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-30">
+							<time datetime="2014-03-01T00:23:36+00:00">
+								March 1, 2014 at 00:23							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Girme,<br />
+Very nice your electromagnetic flowmeter, congratulation.<br />
+I&#8217;m also interested to test this idea, could you please send me more details of the schematics?<br />
+[]&#8217;s Alan: acassis _at_ gmail _dot_ com</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=30#respond' onclick='return addComment.moveForm( "div-comment-30", "30", "respond", "201" )' aria-label='Reply to acassis'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-31" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-31" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/115434239162423105387' rel='external nofollow' class='url'>Thomas Kallenbach</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-31">
+							<time datetime="2014-03-07T11:25:00+00:00">
+								March 7, 2014 at 11:25							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Brilliant post. Thank you for taking the time to prepare it.  Would you please send a schematic to me?  I have been looking to experiment with a magnetic flow meter for quite some time. my email is tjkallenbach AT gmail DOT com<br />
+Warm regards.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=31#respond' onclick='return addComment.moveForm( "div-comment-31", "31", "respond", "201" )' aria-label='Reply to Thomas Kallenbach'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-33" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-33" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/graph.facebook.com/621638481/picture?q=type%3Dlarge%26_md5%3D9e5f827892523ff7a319a1687be4b4dd&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/anil.s.marathe' rel='external nofollow' class='url'>Anil Shripad Marathe</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-33">
+							<time datetime="2014-03-08T12:43:23+00:00">
+								March 8, 2014 at 12:43							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great Article. We  at WAVETEK ELECTRONICS  PUNE IINDIA  make E.M. flowmeters.We are working on New design for Insertion Type E.M. Flowmeter for household residential application.Do you have any referances?   ANIL MARATHE  MOB.+91 9890094841</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=33#respond' onclick='return addComment.moveForm( "div-comment-33", "33", "respond", "201" )' aria-label='Reply to Anil Shripad Marathe'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-35" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-35" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/108503381392666720549' rel='external nofollow' class='url'>Simon Fraval</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-35">
+							<time datetime="2014-03-12T20:15:55+00:00">
+								March 12, 2014 at 20:15							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I&#8217;ll join in the chorus and say &#8216;great work&#8217;! A very interesting read.</p>
+<p>Would I also be able to get a copy of the schematics?<br />
+Simon<br />
+(s.fraval[at]cgiar.org)</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=35#respond' onclick='return addComment.moveForm( "div-comment-35", "35", "respond", "201" )' aria-label='Reply to Simon Fraval'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-36" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-36" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-D_TLziOFAYU/AAAAAAAAAAI/AAAAAAAAABU/xtPqaSnJO8A/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/107181043939849564876' rel='external nofollow' class='url'>Bharat Joshi</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-36">
+							<time datetime="2014-03-12T20:58:18+00:00">
+								March 12, 2014 at 20:58							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great information<br />
+Could you please send me schematics and electronic circuit details?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=36#respond' onclick='return addComment.moveForm( "div-comment-36", "36", "respond", "201" )' aria-label='Reply to Bharat Joshi'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-37" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-37" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i2.wp.com/abs.twimg.com/sticky/default_profile_images/default_profile_2_normal.png?resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://twitter.com/dreweykins' rel='external nofollow' class='url'>Andrew (@dreweykins)</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-37">
+							<time datetime="2014-03-14T01:07:51+00:00">
+								March 14, 2014 at 01:07							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Nice writeup. If I could please get the schematic and circuit details, it would be greatly appreciated. Thanks again,<br />
+<a href="mailto:dreweykins@hotmail.com">dreweykins@hotmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=37#respond' onclick='return addComment.moveForm( "div-comment-37", "37", "respond", "201" )' aria-label='Reply to Andrew (@dreweykins)'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-38" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-38" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i2.wp.com/graph.facebook.com/100004052664237/picture?q=type%3Dlarge%26_md5%3Db02068fbcf53293bbec63bcfa5747b76&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/allan.veale.9' rel='external nofollow' class='url'>Allan Veale</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-38">
+							<time datetime="2014-04-07T10:49:49+00:00">
+								April 7, 2014 at 10:49							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Fantastic post Girme. Your hard work in this area is really useful. Could you please send me the circuit schematic and details to allan.veale(at]gmail[dot)com? Thankyou very much.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=38#respond' onclick='return addComment.moveForm( "div-comment-38", "38", "respond", "201" )' aria-label='Reply to Allan Veale'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-43" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-43" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i2.wp.com/graph.facebook.com/100000920810735/picture?q=type%3Dlarge%26_md5%3D0cfa972fb5e082e49f84ed378258f864&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/sibin.kollenoor' rel='external nofollow' class='url'>Sibin Kollenoor</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-43">
+							<time datetime="2014-05-27T21:00:12+00:00">
+								May 27, 2014 at 21:00							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Girme,<br />
+Congratulations. This is only design idea of electromagnetic flow meter, even after two years.<br />
+Could you please send me circuit schematics and other details of this project?</p>
+<p>Thanking you,<br />
+Sibin<br />
+<a href="mailto:email-sibinkollenoor@yahoo.co.in">email-sibinkollenoor@yahoo.co.in</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=43#respond' onclick='return addComment.moveForm( "div-comment-43", "43", "respond", "201" )' aria-label='Reply to Sibin Kollenoor'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-44" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-44" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/102603525142661161411' rel='external nofollow' class='url'>Bijo Thomas</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-44">
+							<time datetime="2014-06-08T00:26:55+00:00">
+								June 8, 2014 at 00:26							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thanks for this great post.<br />
+I am trying to build an electromagnetic flow-meter and hook this to an arduino board.<br />
+Can you please provide me the circuit diagram and details which will help me build the flow meter.</p>
+<p>Thanks and Regards<br />
+Bijo<br />
+<a href="mailto:bijo71@gmail.com">bijo71@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=44#respond' onclick='return addComment.moveForm( "div-comment-44", "44", "respond", "201" )' aria-label='Reply to Bijo Thomas'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-45" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-45" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/109411673097948568114' rel='external nofollow' class='url'>Chris Larsen</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-45">
+							<time datetime="2014-06-10T23:08:47+00:00">
+								June 10, 2014 at 23:08							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This is an excellent analysis and design.  Your design appears very similar to a meter I am evaluating.  Could I also please get the schematics?  Thank you!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=45#respond' onclick='return addComment.moveForm( "div-comment-45", "45", "respond", "201" )' aria-label='Reply to Chris Larsen'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-46" class="comment byuser comment-author-lemmingj odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-46" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://2.gravatar.com/avatar/2e9d4b36ac8c7ba5d5ebc7e8ab350812?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">lemmingj</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-46">
+							<time datetime="2014-08-01T14:42:11+00:00">
+								August 1, 2014 at 14:42							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi<br />
+This look great 😊😊😊<br />
+Can I get a copy of schematic and some pictures also. Thanks<br />
+Lemming.j(at)gmail(dot)com</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=46#respond' onclick='return addComment.moveForm( "div-comment-46", "46", "respond", "201" )' aria-label='Reply to lemmingj'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-47" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-47" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/101499087089315184791' rel='external nofollow' class='url'>Murty Bhamidipati</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-47">
+							<time datetime="2014-09-02T12:50:30+00:00">
+								September 2, 2014 at 12:50							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>An excellent design : novel yet simple.<br />
+Considering the widespread response received, it will indeed be great if Mr. Grime puts out another write-up suggesting how one can make a prototype on his own Certainly, the circuit &amp; component details will help along with winding details, if possible.<br />
+Congrats, once again.<br />
+B S Murty<br />
+email : <a href="mailto:murty.bs.75@gmail.com">murty.bs.75@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=47#respond' onclick='return addComment.moveForm( "div-comment-47", "47", "respond", "201" )' aria-label='Reply to Murty Bhamidipati'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-49" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-49" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/graph.facebook.com/100002593741067/picture?q=type%3Dlarge%26_md5%3D7344af1842f0877973baea6cbeaaece5&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/karankkhatwani' rel='external nofollow' class='url'>Karan Khatwani</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-49">
+							<time datetime="2014-10-08T14:46:10+00:00">
+								October 8, 2014 at 14:46							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thanx for the great description described by you. But as I am dealing with one project, I want the method about how to construct it. So I request you to please elaborate it. Waiting for ur earlier reply.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=49#respond' onclick='return addComment.moveForm( "div-comment-49", "49", "respond", "201" )' aria-label='Reply to Karan Khatwani'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-51" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-51" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/lh4.googleusercontent.com/-zFA-WOzMuRw/AAAAAAAAAAI/AAAAAAAAAEE/7JUsYJiS5fQ/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/102894551385461471372' rel='external nofollow' class='url'>Marta Garcés</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-51">
+							<time datetime="2014-10-22T14:42:22+00:00">
+								October 22, 2014 at 14:42							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great post!! I am trying to build a magnetic flow meter. Can you please send me the circuit diagram and details which will help me with it? My email: <a href="mailto:mrt.secrag@gmail.com">mrt.secrag@gmail.com</a><br />
+Thank you in advance</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=51#respond' onclick='return addComment.moveForm( "div-comment-51", "51", "respond", "201" )' aria-label='Reply to Marta Garcés'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-52" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-52" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://1.gravatar.com/avatar/15cf03425454383caeb03baadf8fbee5?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">Richard Carter</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-52">
+							<time datetime="2014-11-06T07:06:59+00:00">
+								November 6, 2014 at 07:06							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Neha Girme,<br />
+Thanks so much for posting the design of an electromagnetic flow meter! Would you please send me the circuit diagram and list the required electrical components?<br />
+Best regards,<br />
+Richard<br />
+email: <a href="mailto:electronbeam220@outlook.com">electronbeam220@outlook.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=52#respond' onclick='return addComment.moveForm( "div-comment-52", "52", "respond", "201" )' aria-label='Reply to Richard Carter'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-53" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-53" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/graph.facebook.com/100001470092942/picture?q=type%3Dlarge%26_md5%3D7642148cd0f52362bf9568fb112cc311&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/qamar.azam' rel='external nofollow' class='url'>Azam Shaikh</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-53">
+							<time datetime="2014-11-06T14:30:27+00:00">
+								November 6, 2014 at 14:30							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great Post on  Electromagnetic flow meter.<br />
+I have a question on electro magnetic flow meter.<br />
+if i will use two different sizes ( 1 inch and 0.5 inch ) of  electromagnetic flow meter on a same pipe line ,what will be the result? flow in both flow meter will be same or different? which flow meter have higher flow reading, 1 inch or 0.5 inch.</p>
+<p>thanks<br />
+qamarazam</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=53#respond' onclick='return addComment.moveForm( "div-comment-53", "53", "respond", "201" )' aria-label='Reply to Azam Shaikh'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-54" class="comment byuser comment-author-lylem3636 odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-54" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/fa6dbb110c904f7ef567282c34dfb5be?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://lylemblog.wordpress.com' rel='external nofollow' class='url'>lylem3636</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-54">
+							<time datetime="2014-11-12T08:06:17+00:00">
+								November 12, 2014 at 08:06							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thanks for the tutorial, Girme.  Like everyone else who replied, I would like to look at the schematics you have developed.  Your explanations are quite clear. Please send any info to <a href="mailto:lylem@lyleslights.com">lylem@lyleslights.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=54#respond' onclick='return addComment.moveForm( "div-comment-54", "54", "respond", "201" )' aria-label='Reply to lylem3636'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-56" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-56" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i2.wp.com/graph.facebook.com/100000158888309/picture?q=type%3Dlarge%26_md5%3D0c7b622eccbdd098bd4dc5ecd5027539&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/ajit.pawar.3954' rel='external nofollow' class='url'>Ajit Pawar</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-56">
+							<time datetime="2014-12-16T12:54:52+00:00">
+								December 16, 2014 at 12:54							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Wonderful information. Thank you Neha madam. Can you please send the circuit diagram details on<br />
+<a href="mailto:ajit.pawar8051@gmail.com">ajit.pawar8051@gmail.com</a></p>
+<p>Thanks &amp; regards,<br />
+Ajit Pawar</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=56#respond' onclick='return addComment.moveForm( "div-comment-56", "56", "respond", "201" )' aria-label='Reply to Ajit Pawar'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-57" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-57" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/6a11ee33ee47a4a5286825f59b6a3157?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">Anna Purser</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-57">
+							<time datetime="2015-01-22T07:42:10+00:00">
+								January 22, 2015 at 07:42							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi, I am trying to build a flow meter and this electromagnetic flow meter is very interesting! Could you send me the schematics and parts list?  My email is <a href="mailto:aep152@msstate.edu">aep152@msstate.edu</a>. Thank you!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=57#respond' onclick='return addComment.moveForm( "div-comment-57", "57", "respond", "201" )' aria-label='Reply to Anna Purser'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-58" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-58" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/graph.facebook.com/v2.2/1024244200/picture?q=type%3Dlarge%26_md5%3Dd4ee8d62264741e807522c952c4d7f07&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://www.facebook.com/1024244200' rel='external nofollow' class='url'>Chris Heltborg Oxholm</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-58">
+							<time datetime="2015-04-24T16:18:31+00:00">
+								April 24, 2015 at 16:18							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi,</p>
+<p>This is a very interesting read, i&#8217;d like to make a magnetic flowmeter myself, would you send me your schematics please?</p>
+<p>From<br />
+Chris</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=58#respond' onclick='return addComment.moveForm( "div-comment-58", "58", "respond", "201" )' aria-label='Reply to Chris Heltborg Oxholm'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-59" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-59" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/graph.facebook.com/v2.2/1024244200/picture?q=type%3Dlarge%26_md5%3Dd4ee8d62264741e807522c952c4d7f07&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://www.facebook.com/1024244200' rel='external nofollow' class='url'>Chris Heltborg Oxholm</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-59">
+							<time datetime="2015-04-24T16:18:59+00:00">
+								April 24, 2015 at 16:18							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi,</p>
+<p>This is a very interesting read, i&#8217;d like to make a magnetic flowmeter myself, would you send me your schematics please?</p>
+<p>Mail: <a href="mailto:cjepp86@gmail.com">cjepp86@gmail.com</a></p>
+<p>From<br />
+Chris</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=59#respond' onclick='return addComment.moveForm( "div-comment-59", "59", "respond", "201" )' aria-label='Reply to Chris Heltborg Oxholm'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-60" class="comment byuser comment-author-davicho88 even thread-even depth-1 highlander-comment">
+			<article id="div-comment-60" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/6aa2d4ff0517253635c280e519fe77d7?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">davicho88</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-60">
+							<time datetime="2015-05-22T03:45:32+00:00">
+								May 22, 2015 at 03:45							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Dear Girme Neha,</p>
+<p>Thanks for you tutorial. Is it possible to share the diagram or schematics of the project?. I&#8217;ll be very grateful.</p>
+<p>Regars</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=60#respond' onclick='return addComment.moveForm( "div-comment-60", "60", "respond", "201" )' aria-label='Reply to davicho88'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-61" class="comment byuser comment-author-davicho88 odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-61" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/6aa2d4ff0517253635c280e519fe77d7?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">davicho88</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-61">
+							<time datetime="2015-05-22T03:46:02+00:00">
+								May 22, 2015 at 03:46							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>My email is <a href="mailto:david.escandon.v@gmail.com">david.escandon.v@gmail.com</a></p>
+<p>Regards,</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=61#respond' onclick='return addComment.moveForm( "div-comment-61", "61", "respond", "201" )' aria-label='Reply to davicho88'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-63" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-63" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-RP3_34JddSQ/AAAAAAAAAAI/AAAAAAAAABk/SPJfRtx15d4/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/111006283553449779352' rel='external nofollow' class='url'>ketan paratane</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-63">
+							<time datetime="2015-06-29T10:18:11+00:00">
+								June 29, 2015 at 10:18							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hii neha,<br />
+ This information very helpful for my project work. I am working on magnetic design of this meter so please send me about magnetic design. My email id is <a href="mailto:paratanek@gmail.com">paratanek@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=63#respond' onclick='return addComment.moveForm( "div-comment-63", "63", "respond", "201" )' aria-label='Reply to ketan paratane'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-64" class="comment byuser comment-author-erparesh1987 odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-64" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://2.gravatar.com/avatar/ea862255c1998e3fdfd994401ee94ead?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://u546.wordpress.com' rel='external nofollow' class='url'>erparesh1987</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-64">
+							<time datetime="2015-07-25T00:43:35+00:00">
+								July 25, 2015 at 00:43							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi neha</p>
+<p>I like your post, i am teacher and i would like to teach your idea front of  my students, so plz give me detail circuits about on magnetic flow meter, so i will be easily represent front of my students.send all documents detail mail on<br />
+<a href="mailto:Er.paresh1987@gmail.com">Er.paresh1987@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=64#respond' onclick='return addComment.moveForm( "div-comment-64", "64", "respond", "201" )' aria-label='Reply to erparesh1987'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-65" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-65" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/113737525007636750613' rel='external nofollow' class='url'>ken smelquist</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-65">
+							<time datetime="2015-07-28T07:22:59+00:00">
+								July 28, 2015 at 07:22							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great post!! I am trying to build a Electromagnetic flow meter.<br />
+Can you please send me the circuit diagram and details which will help me with it? My email: <a href="mailto:ken.smelquist@gmail.com">ken.smelquist@gmail.com</a><br />
+Thank you in advance</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=65#respond' onclick='return addComment.moveForm( "div-comment-65", "65", "respond", "201" )' aria-label='Reply to ken smelquist'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-68" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-68" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/108614094856140954709' rel='external nofollow' class='url'>Jim Edgeworth</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-68">
+							<time datetime="2015-08-26T04:50:11+00:00">
+								August 26, 2015 at 04:50							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I am a retired electronics engineer, who still dabbles to keep the grey cells and hands busy.<br />
+Your excellent tutorial has inspired me to build a mag meter. I would appreciate it if you could email me the schematic etc. for your design to:-  <a href="mailto:jimedge1640@gmail.com">jimedge1640@gmail.com</a><br />
+Regards<br />
+Jim Edgeworth</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=68#respond' onclick='return addComment.moveForm( "div-comment-68", "68", "respond", "201" )' aria-label='Reply to Jim Edgeworth'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-69" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-69" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/graph.facebook.com/v2.2/10156092475260328/picture?q=type%3Dlarge%26_md5%3D4b2083e8f97d22a2ce72a9900466694c&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/app_scoped_user_id/10156092475260328/' rel='external nofollow' class='url'>Carlo Terruzzi</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-69">
+							<time datetime="2015-10-23T16:39:32+00:00">
+								October 23, 2015 at 16:39							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great job Neha,<br />
+I&#8217;m in the middle of building a flow meter, but due to the extremely low voltage at the electrodes, the noise is always covering the signal. I think a meticulous construction is needed to achieve any result. I tried to contact you by email, but considering the widespread response received, I hope to read soon a post with more details, and especially pictures about the construction, and some results (accuracy, minimum flow&#8230;.)</p>
+<p>best regards, and thank you again!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=69#respond' onclick='return addComment.moveForm( "div-comment-69", "69", "respond", "201" )' aria-label='Reply to Carlo Terruzzi'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-70" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-70" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i2.wp.com/lh5.googleusercontent.com/-8oHCmR0LncA/AAAAAAAAAAI/AAAAAAAABTU/olRRjJRAhcI/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/113653414147010965628' rel='external nofollow' class='url'>charles nturibi</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-70">
+							<time datetime="2015-11-07T14:45:39+00:00">
+								November 7, 2015 at 14:45							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Nice post. Am trying to build a electromagnetic flowmeter, could you olease send me a circuit schemantic diagram of this project?? Gmail address <a href="mailto:nturibicharles.cn@gmail.com">nturibicharles.cn@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=70#respond' onclick='return addComment.moveForm( "div-comment-70", "70", "respond", "201" )' aria-label='Reply to charles nturibi'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-71" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-71" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i2.wp.com/graph.facebook.com/v2.2/942864929115915/picture?q=type%3Dlarge%26_md5%3Df4bf40adcff5f8b9dc41784bbbcc242e&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/app_scoped_user_id/942864929115915/' rel='external nofollow' class='url'>Pratik Patel</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-71">
+							<time datetime="2015-12-05T10:36:30+00:00">
+								December 5, 2015 at 10:36							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>hi neha,<br />
+Your excellent tutorial has inspired me<br />
+i am from nenosoft system,  gandhinagar gujarat. we are already making electromagnetic flow meter but our flow meter  size is more bulky and we are going to reduce it.  I would appreciate it if you could email me the schematic etc. of your design to:- <a href="mailto:pratikpatel2033@gmail.com">pratikpatel2033@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=71#respond' onclick='return addComment.moveForm( "div-comment-71", "71", "respond", "201" )' aria-label='Reply to Pratik Patel'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-72" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-72" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://1.gravatar.com/avatar/aea66dbabf715c1b2d1e9b59dc919cd3?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">Proyecto Stow</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-72">
+							<time datetime="2016-01-06T03:38:37+00:00">
+								January 6, 2016 at 03:38							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>We are starting a similar low precition project for university. We would buy the schematic and receive advice (pay per hour). stowproject gmail com</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=72#respond' onclick='return addComment.moveForm( "div-comment-72", "72", "respond", "201" )' aria-label='Reply to Proyecto Stow'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-73" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-73" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/111828467027558864977' rel='external nofollow' class='url'>tobias brühwiler</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-73">
+							<time datetime="2016-01-14T17:20:41+00:00">
+								January 14, 2016 at 17:20							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi this is very informative!<br />
+Could you send me the scematic and pictures? I would like to try building it myself 🙂<br />
+Thanks!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=73#respond' onclick='return addComment.moveForm( "div-comment-73", "73", "respond", "201" )' aria-label='Reply to tobias brühwiler'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-74" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-74" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-pmQr_FxcVIw/AAAAAAAAAAI/AAAAAAAABeo/wt3uXS9NVIM/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/105731442264366532849' rel='external nofollow' class='url'>Utkarsh Patel</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-74">
+							<time datetime="2016-01-27T21:25:40+00:00">
+								January 27, 2016 at 21:25							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I am utkarsh patel i read your Blog For Electromagnetic Flowmeter it is very very good but i need some more help regarding it. i am doing R&amp;D projects for Instrumentation students. i need SCHEMATIC &amp; PICTURE OF COIL &amp; CIRCUIT. I WOULD ALSO LIKE TO KNOW HOW TO CALCULATE COIL TURNS @ PIPE DIA when we change from 1&#8243; line size to 2&#8243; than what will be the coil tuns &amp; dimensions. i would also like to know length of pipe.</p>
+<p>i am very glad if you will help me in this project.<br />
+awaiting for your positive replay.</p>
+<p>thanking you.</p>
+<p>Please Response me on <a href="mailto:utkarsh6880@gmail.com">utkarsh6880@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=74#respond' onclick='return addComment.moveForm( "div-comment-74", "74", "respond", "201" )' aria-label='Reply to Utkarsh Patel'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-75" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-75" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://2.gravatar.com/avatar/2d1446409b9f111710406a418c2043e5?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">Keith Scidmore</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-75">
+							<time datetime="2016-02-09T08:27:08+00:00">
+								February 9, 2016 at 08:27							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Could you send me the scematic and pictures? I have a research application that requires a custom design for use at 5000 meters depth &#8211; studying microbes in subsurface aquifers. The commercial units fail due to the extreme ambient pressures. May pay for consulting.</p>
+<p><a href="mailto:neocoerulea@yahoo.com">neocoerulea@yahoo.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=75#respond' onclick='return addComment.moveForm( "div-comment-75", "75", "respond", "201" )' aria-label='Reply to Keith Scidmore'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-76" class="comment odd alt thread-odd thread-alt depth-1 parent highlander-comment">
+			<article id="div-comment-76" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i2.wp.com/lh5.googleusercontent.com/-nYV4cRJXBEo/AAAAAAAAAAI/AAAAAAAAABA/9DaFx1ZVoKI/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/103019808997084422850' rel='external nofollow' class='url'>Spectrum Technology</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-76">
+							<time datetime="2016-04-01T22:42:12+00:00">
+								April 1, 2016 at 22:42							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi&#8230;.</p>
+<p>Nice and wonderful information&#8230;</p>
+<p>one thing we want, the electrodes should be in contact with flowing fluid or its has to be isloated from both the flowing fluid as well pipe body.</p>
+<p>Thanks in advance&#8230;.<br />
+Davinder Saini<br />
+spectrum Technology</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=76#respond' onclick='return addComment.moveForm( "div-comment-76", "76", "respond", "201" )' aria-label='Reply to Spectrum Technology'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-77" class="comment byuser comment-author-nehagirme bypostauthor even depth-2 highlander-comment">
+			<article id="div-comment-77" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-77">
+							<time datetime="2016-04-01T23:11:37+00:00">
+								April 1, 2016 at 23:11							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thanks.<br />
+Regarding your doubt,<br />
+Electrodes has to be in contact with the flowing fluid, otherwise how are you going to sense the change in flow? Simple, electrodes are picking up the change in emf (directly proportional to the flow),if they are isolated from the fluid itself then the whole purpose of measuring flow is failed. Hope I have cleared your doubt. </p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=77#respond' onclick='return addComment.moveForm( "div-comment-77", "77", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-78" class="comment byuser comment-author-kiranisht odd alt thread-even depth-1 parent highlander-comment">
+			<article id="div-comment-78" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f0d97b8309eeab491744e031385aab84?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://kiranishtblog.wordpress.com' rel='external nofollow' class='url'>kiranisht</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-78">
+							<time datetime="2016-04-13T11:05:42+00:00">
+								April 13, 2016 at 11:05							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Dear Neha<br />
+That&#8217;s a fantastic post!<br />
+I&#8217;m absolutely impressed and I wish to build it.<br />
+Could you please send me schematics and component list?<br />
+Thanks a lot in advance!<br />
+Kiranisht<br />
+Kiranisht [at)gmail [dot)com</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=78#respond' onclick='return addComment.moveForm( "div-comment-78", "78", "respond", "201" )' aria-label='Reply to kiranisht'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-79" class="comment byuser comment-author-kiranisht even depth-2 highlander-comment">
+			<article id="div-comment-79" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f0d97b8309eeab491744e031385aab84?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://kiranishtblog.wordpress.com' rel='external nofollow' class='url'>kiranisht</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-79">
+							<time datetime="2016-04-13T11:06:51+00:00">
+								April 13, 2016 at 11:06							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Just one more thing. . Do the number of turns change with increase in pipe diameter?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=79#respond' onclick='return addComment.moveForm( "div-comment-79", "79", "respond", "201" )' aria-label='Reply to kiranisht'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-80" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-80" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/108755593613145518184' rel='external nofollow' class='url'>Low Michael</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-80">
+							<time datetime="2016-04-21T10:57:27+00:00">
+								April 21, 2016 at 10:57							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Excellent article!<br />
+Could you please kindly send me the schematics so that I can try my hands on it?<br />
+My email id : <a href="mailto:mikelow1957@gmail.com">mikelow1957@gmail.com</a><br />
+Thanks.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=80#respond' onclick='return addComment.moveForm( "div-comment-80", "80", "respond", "201" )' aria-label='Reply to Low Michael'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-81" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-81" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/118253164341476821518' rel='external nofollow' class='url'>yeraldo Fernandez Palomino</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-81">
+							<time datetime="2016-06-07T05:38:14+00:00">
+								June 7, 2016 at 05:38							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>excellent work friend, I &#8216;m interested in implementing your flow meter , you could share your information .<br />
+Email: <a href="mailto:Yeraldo.fp@gmail.com">Yeraldo.fp@gmail.com</a><br />
+Thanks in advance</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=81#respond' onclick='return addComment.moveForm( "div-comment-81", "81", "respond", "201" )' aria-label='Reply to yeraldo Fernandez Palomino'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-82" class="comment odd alt thread-odd thread-alt depth-1 parent highlander-comment">
+			<article id="div-comment-82" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://1.gravatar.com/avatar/d4963d2fc9aef5a9c27f59112a74e5cf?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">Iñaki Eseberri</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-82">
+							<time datetime="2016-06-22T21:28:56+00:00">
+								June 22, 2016 at 21:28							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello!</p>
+<p>I started a blog two years ago with the idea to share information about the process control world.</p>
+<p>I just like the thanks your helpful articles about this subject, I use to visit it regularly.</p>
+<p>I want to share also my personal website about this area <a href="http://instrumentation.eseberri.com/category/measurement/flow/magnetic/" rel="nofollow">Magnetic</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=82#respond' onclick='return addComment.moveForm( "div-comment-82", "82", "respond", "201" )' aria-label='Reply to Iñaki Eseberri'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-83" class="comment byuser comment-author-nehagirme bypostauthor even depth-2 highlander-comment">
+			<article id="div-comment-83" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-83">
+							<time datetime="2016-06-22T21:36:26+00:00">
+								June 22, 2016 at 21:36							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thanks Inaki! I visited your blog too, looks interesting and informative! Great work! Thanks for sharing! </p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=83#respond' onclick='return addComment.moveForm( "div-comment-83", "83", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-85" class="comment odd alt thread-even depth-1 highlander-comment">
+			<article id="div-comment-85" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/graph.facebook.com/v2.2/10154178301906075/picture?q=type%3Dlarge&#038;resize=42%2C42' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://www.facebook.com/app_scoped_user_id/10154178301906075/' rel='external nofollow' class='url'>Lalit Malhotra</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-85">
+							<time datetime="2016-07-28T16:48:07+00:00">
+								July 28, 2016 at 16:48							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Neha,<br />
+Can you send me the schematics of the magnetic flow meter</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=85#respond' onclick='return addComment.moveForm( "div-comment-85", "85", "respond", "201" )' aria-label='Reply to Lalit Malhotra'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-86" class="comment even thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-86" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://2.gravatar.com/avatar/e9da0f7544f34c019db5241414e5e1e2?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">Prerna Enterprises</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-86">
+							<time datetime="2016-08-26T01:11:14+00:00">
+								August 26, 2016 at 01:11							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Neha,<br />
+Myself Deepak Jadhav<br />
+Could you pls share schematics and component list?<br />
+Thanks a lot in advance!<br />
+actually I need pulse op from sensor My mechanical arrangement is ready (coil mounting etc)<br />
+Pls feel free to contact on <a href="mailto:prernaenergy@gmail.com">prernaenergy@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=86#respond' onclick='return addComment.moveForm( "div-comment-86", "86", "respond", "201" )' aria-label='Reply to Prerna Enterprises'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-87" class="comment byuser comment-author-pritesh16 odd alt thread-even depth-1 highlander-comment">
+			<article id="div-comment-87" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/69dc42a5d094924c85cdd27fec16ceaf?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://pritesh16.wordpress.com' rel='external nofollow' class='url'>pritesh16</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-87">
+							<time datetime="2016-11-24T17:42:04+00:00">
+								November 24, 2016 at 17:42							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello !<br />
+I have found this article while developing Electromagnetic flow meter.<br />
+You have very well explained with the details.<br />
+I have developed the meter but having problem in getting accurate result,it would be great if you can send me the schematic and reference you have.<br />
+Thanks in advance.<br />
+E-mail &#8211; <a href="mailto:pritesh.soni@eleics.com">pritesh.soni@eleics.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=87#respond' onclick='return addComment.moveForm( "div-comment-87", "87", "respond", "201" )' aria-label='Reply to pritesh16'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-89" class="comment even thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-89" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/117934077013590630731' rel='external nofollow' class='url'>Brent Hitzeroth</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-89">
+							<time datetime="2016-12-20T11:10:22+00:00">
+								December 20, 2016 at 11:10							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great Work! </p>
+<p>I am busy with a similar project and I would really appreciate the schematics for your project.<br />
+My email address is &#8211; <a href="mailto:brent.hitz@gmail.com">brent.hitz@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=89#respond' onclick='return addComment.moveForm( "div-comment-89", "89", "respond", "201" )' aria-label='Reply to Brent Hitzeroth'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-90" class="comment byuser comment-author-hjasondblog odd alt thread-even depth-1 highlander-comment">
+			<article id="div-comment-90" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/c54dcfa0944bb5e8f3efc7c6d5fb1e81?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='http://hjasondblog.wordpress.com' rel='external nofollow' class='url'>Jason Dsouza</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-90">
+							<time datetime="2017-01-05T10:56:22+00:00">
+								January 5, 2017 at 10:56							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This is really excellent blog I have found so far on magmeter I am currently working on a magmeter prototype to measure the flow of semi-solid liquids with abrasive materials. I would very much appreciate your help with the schematics of your project. My mail id is <a href="mailto:jasondsouza454@gmail.com">jasondsouza454@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=90#respond' onclick='return addComment.moveForm( "div-comment-90", "90", "respond", "201" )' aria-label='Reply to Jason Dsouza'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-91" class="comment even thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-91" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/lh5.googleusercontent.com/-a84U0tHCB3U/AAAAAAAAAAI/AAAAAAAAACQ/ynQPqPes8ps/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/112381010534100835575' rel='external nofollow' class='url'>Mahesh Kute</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-91">
+							<time datetime="2017-01-09T11:56:30+00:00">
+								January 9, 2017 at 11:56							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>hi neha<br />
+i need details of flow meter design<br />
+this my mail id: <a href="mailto:mkute7301@gmail.com">mkute7301@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=91#respond' onclick='return addComment.moveForm( "div-comment-91", "91", "respond", "201" )' aria-label='Reply to Mahesh Kute'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-93" class="comment odd alt thread-even depth-1 highlander-comment">
+			<article id="div-comment-93" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/lh5.googleusercontent.com/-kPqQle23GMI/AAAAAAAAAAI/AAAAAAAAADM/9ZNiSGwoM14/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/117556630981886469815' rel='external nofollow' class='url'>Vinícius Nery</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-93">
+							<time datetime="2017-02-18T06:54:30+00:00">
+								February 18, 2017 at 06:54							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great work!!!</p>
+<p>Can you send me details in email (schematics)?<br />
+<a href="mailto:nvinicius.nery@gmail.com">nvinicius.nery@gmail.com</a><br />
+Thank you</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=93#respond' onclick='return addComment.moveForm( "div-comment-93", "93", "respond", "201" )' aria-label='Reply to Vinícius Nery'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-94" class="comment even thread-odd thread-alt depth-1 parent highlander-comment">
+			<article id="div-comment-94" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/lh3.googleusercontent.com/-WP0WM9ecC6I/AAAAAAAAAAI/AAAAAAAAABM/CSZpmmDuaaU/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/110245043827651997500' rel='external nofollow' class='url'>YADU KRISHNAN K</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-94">
+							<time datetime="2017-02-22T18:58:58+00:00">
+								February 22, 2017 at 18:58							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Neha,<br />
+This is a doubt regarding how the electrodes have to be placed. I understood that the electrodes should be in contact with the flowing liquid.So will this be a non invasive technique of flow measurement? ie, are the electrodes placed on the pipe or inside the pipe? If outside then the pipe should be conducting in order to make a direct contact right? Please correct me if my doubt is wrong. It would be very helpful for us since we are now trying to build a non invasive flow meter as part of our final year project.</p>
+<p>Thanks in advance !</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=94#respond' onclick='return addComment.moveForm( "div-comment-94", "94", "respond", "201" )' aria-label='Reply to YADU KRISHNAN K'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-95" class="comment byuser comment-author-nehagirme bypostauthor odd alt depth-2 highlander-comment">
+			<article id="div-comment-95" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-95">
+							<time datetime="2017-02-22T22:29:55+00:00">
+								February 22, 2017 at 22:29							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello,</p>
+<p>About the electrodes &#8211; these are the sensors which sense the changing EMFs from the flowing fluid and this emf can be measured. </p>
+<p>These electrodes are placed in such a way that they are half inside pipe and half outside the pipe surface. There is a figure in my blog, which will clear your doubt.</p>
+<p>I don&#8217;t think the above mentioned method is a non-invasive technique of flow measurement. Since you immerse the electrode in the pipe,it cannot be non-invasive. </p>
+<p>Another question you had regarding if pipe should be conducting in order to make a direct contact&#8230; First thing friend, get your basics right.<br />
+Understand the working principal of electromagnetic flow meter.<br />
+In simple words, you are trying to measure the flow rate of the flowing fluid inside a pipe. In electromagnetic flowmeter, faradays law is used which states,<br />
+THE VOLTAGE INDUCED ACROSS ANY CONDUCTOR AS IT MOVES AT RIGHT ANGLES THROUGH A MAGNETIC FIELD IS PROPORTIONAL TO THE VELOCITY OF THAT CONDUCTOR.</p>
+<p>So say fr example: if the liquid inside the pipe is water, water is conducting. Hence the electrodes may be of SS material is conducting, placed on top of a PVC or non-conducting material pipe. So, the electrodes will sense the emf generated due to the magnetic field perpendicular to the flow of fluid. And hence the working.</p>
+<p>I hope I am able to clear your few doubts. In case of any other questions, feel free to write. </p>
+<p>Thanks and All the Best!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=95#respond' onclick='return addComment.moveForm( "div-comment-95", "95", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-96" class="comment even thread-even depth-1 parent highlander-comment">
+			<article id="div-comment-96" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/lh3.googleusercontent.com/-WP0WM9ecC6I/AAAAAAAAAAI/AAAAAAAAABM/CSZpmmDuaaU/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/110245043827651997500' rel='external nofollow' class='url'>YADU KRISHNAN K</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-96">
+							<time datetime="2017-02-23T10:01:01+00:00">
+								February 23, 2017 at 10:01							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thank you so much for your reply.<br />
+It helped us a lot and cleared our doubts.<br />
+But we are looking for completely non invasive flow sensor so that it can even work with already installed systems. Here since the electrodes are half inside and half outside it cannot be used to measure the velocity of already existing pipes right? When we came across some conference papers it was written that electrodes can be placed either inside or outside. That is why we had a doubt regarding the placing the electrodes. We tried another method by using ultrasonic transducer pair which works on the principle of doppler shift. Though it was completely non invasive the unavailability of some components have made us to turn to this method.</p>
+<p>Since the flow meter being non invasive is very important to us, is there no other way but to drop this method here? </p>
+<p>Sorry if I troubled you !<br />
+Thanks in advance..</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=96#respond' onclick='return addComment.moveForm( "div-comment-96", "96", "respond", "201" )' aria-label='Reply to YADU KRISHNAN K'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-97" class="comment byuser comment-author-nehagirme bypostauthor odd alt depth-2 highlander-comment">
+			<article id="div-comment-97" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-97">
+							<time datetime="2017-02-23T10:05:00+00:00">
+								February 23, 2017 at 10:05							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Understood. Can you send me a link for that paper you have found for non-invasive method of flow measurement?Maybe  I&#8217;ll go through it and suggest you something later.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=97#respond' onclick='return addComment.moveForm( "div-comment-97", "97", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-98" class="comment even thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-98" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://2.gravatar.com/avatar/88d94a501bcad7cbff452084204e7c27?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://profiles.google.com/115290424374518407367' rel='external nofollow' class='url'>keerthana ik</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-98">
+							<time datetime="2017-02-23T10:09:35+00:00">
+								February 23, 2017 at 10:09							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hi Neha ,<br />
+This is just to  know your opinion about an idea to make the whole thing non-invasive.</p>
+<p>1)  Instead of electrodes if we use  another two coils again , then though it is outside the pipe, voltage will be induced in it  right? If we can find out any method to measure the voltage induced in the coils, then that would be enough to measure the flow rate isn&#8217;t it?</p>
+<p>2) There will be a self induction in the coils that generate the original flux , correct? Can&#8217;t this self induction also be used? Why is that not used? Is that due to the practical difficulties?</p>
+<p>Kindly correct me if I am wrong.<br />
+Thanks in advance !</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=98#respond' onclick='return addComment.moveForm( "div-comment-98", "98", "respond", "201" )' aria-label='Reply to keerthana ik'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-99" class="comment odd alt thread-even depth-1 parent highlander-comment">
+			<article id="div-comment-99" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i0.wp.com/lh3.googleusercontent.com/-WP0WM9ecC6I/AAAAAAAAAAI/AAAAAAAAABM/CSZpmmDuaaU/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/110245043827651997500' rel='external nofollow' class='url'>YADU KRISHNAN K</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-99">
+							<time datetime="2017-02-23T10:18:15+00:00">
+								February 23, 2017 at 10:18							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p><a href="http://www.analog.com/en/analog-dialogue/articles/electromagnetic-flow-meters-achieve-high-accuracy.html" rel="nofollow">http://www.analog.com/en/analog-dialogue/articles/electromagnetic-flow-meters-achieve-high-accuracy.html</a></p>
+<p>Just see the paragraph just below figure.6. It is said that it is a capacitive method. What would that be?</p>
+<p>Thank you for helping me out !</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=99#respond' onclick='return addComment.moveForm( "div-comment-99", "99", "respond", "201" )' aria-label='Reply to YADU KRISHNAN K'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-100" class="comment byuser comment-author-nehagirme bypostauthor even depth-2 highlander-comment">
+			<article id="div-comment-100" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-100">
+							<time datetime="2017-02-23T10:21:55+00:00">
+								February 23, 2017 at 10:21							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I shall check and get back to you</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=100#respond' onclick='return addComment.moveForm( "div-comment-100", "100", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-101" class="comment byuser comment-author-nehagirme bypostauthor odd alt depth-2 highlander-comment">
+			<article id="div-comment-101" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-101">
+							<time datetime="2017-02-23T10:52:45+00:00">
+								February 23, 2017 at 10:52							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Check this out.</p>
+<p><a href="http://journals.sagepub.com/doi/abs/10.1177/002029409903200604?journalCode=maca" rel="nofollow">http://journals.sagepub.com/doi/abs/10.1177/002029409903200604?journalCode=maca</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=101#respond' onclick='return addComment.moveForm( "div-comment-101", "101", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-102" class="comment even thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-102" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i2.wp.com/lh6.googleusercontent.com/-HaH-s_78i_w/AAAAAAAAAAI/AAAAAAAAABk/GOPcKFe1dLA/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/112137794053510876788' rel='external nofollow' class='url'>Santosh Patil</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-102">
+							<time datetime="2017-03-20T10:33:01+00:00">
+								March 20, 2017 at 10:33							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello Neha, nice to see the simplified way to construct magnetic flow meter. I am new to this however would like to know more about the programming part of the microcontroller for the different features of the magnetic flowmeter while constructing. If is there any way or idea you have kindly share. Also requested you to share the complete circuit diagram with component details I can purchase to built the magnetic flow meter. My E-mail id is : <a href="mailto:patilsantoshm@gmail.com">patilsantoshm@gmail.com</a>. Awaiting your reply. Regards, Santosh (India)</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=102#respond' onclick='return addComment.moveForm( "div-comment-102", "102", "respond", "201" )' aria-label='Reply to Santosh Patil'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-105" class="comment odd alt thread-even depth-1 parent highlander-comment">
+			<article id="div-comment-105" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://i1.wp.com/lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?resize=42%2C42&#038;ssl=1' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://plus.google.com/113597703116995489890' rel='external nofollow' class='url'>Kaushal Chokshi</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-105">
+							<time datetime="2017-06-05T09:47:53+00:00">
+								June 5, 2017 at 09:47							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello Grime Neha</p>
+<p>Please give me your email address because I will talk to  regarding manufacturing of electromagnetic flow meter<br />
+future communication please note down my email <a href="mailto:address-kaushalchokshi22@gmail.com">address-kaushalchokshi22@gmail.com</a><br />
+contact no-+91 95379 18780</p>
+<p>Thank you<br />
+Kaushal chokshi</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=105#respond' onclick='return addComment.moveForm( "div-comment-105", "105", "respond", "201" )' aria-label='Reply to Kaushal Chokshi'>Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-106" class="comment byuser comment-author-nehagirme bypostauthor even depth-2 highlander-comment">
+			<article id="div-comment-106" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/f17b1a286d9f407602bfd2aa6bda7132?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn"><a href='https://nehagirme.wordpress.com' rel='external nofollow' class='url'>Girme Neha</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-106">
+							<time datetime="2017-06-05T10:19:40+00:00">
+								June 5, 2017 at 10:19							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p><a href="mailto:nehagirme@gmail.com">nehagirme@gmail.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=106#respond' onclick='return addComment.moveForm( "div-comment-106", "106", "respond", "201" )' aria-label='Reply to Girme Neha'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-108" class="comment odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<article id="div-comment-108" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://0.gravatar.com/avatar/6277243f50a592039250b5c6635a3da8?s=42&#038;d=&#038;r=G' class='avatar avatar-42' height='42' width='42' />						<b class="fn">Shafiee</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/#comment-108">
+							<time datetime="2017-07-23T13:31:08+00:00">
+								July 23, 2017 at 13:31							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hello,<br />
+I read your post about Electromagnetic Flow meter Design.It was very useful.  I would like to build the electromagnetic water flow meter you have designed. Could you please post me a circuit diagram and schematic with components listed and more details?<br />
+Thank you.<br />
+My email address: <a href="mailto:ra_shafiee@yahoo.com">ra_shafiee@yahoo.com</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://nehagirme.wordpress.com/2011/11/19/electromagnetic-flowmeter-design/?replytocom=108#respond' onclick='return addComment.moveForm( "div-comment-108", "108", "respond", "201" )' aria-label='Reply to Shafiee'>Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+		<div id="respond" class="comment-respond">
+		<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2011/11/19/electromagnetic-flowmeter-design/#respond" style="display:none;">Cancel reply</a></small></h2>			<form action="https://nehagirme.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="69c91bcbcd" /><input type="hidden" name="_wp_http_referer" value="/2011/11/19/electromagnetic-flowmeter-design/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=https%3A%2F%2Fnehagirme.wordpress.com" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name</label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=&amp;forcedefault=y&amp;r=G" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p><p class="post-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog"  style="display: inline;">Notify me of new posts via email.</label></p></div>
+
+
+
+
+<p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='201' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="017d09c0f9" /></p>
+<input type="hidden" name="genseq" value="1502349603" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="37"/></p>			</form>
+			</div><!-- #respond -->
+	<div style="clear: both"></div>
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://nehagirme.wordpress.com/2011/10/26/envent-twopointzero/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">ENvent TwoPointZero</span></a></div><div class="nav-next"><a href="https://nehagirme.wordpress.com/2011/12/26/beagle-board-cross-compilation/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">BEAGLE BOARD: CROSS-COMPILATION</span></a></div></div>
+	</nav>
+	</main><!-- .site-main -->
+
+	
+</div><!-- .content-area -->
+
+
+	<aside id="secondary" class="sidebar widget-area" role="complementary">
+		<section id="blog-stats-2" class="widget widget_blog-stats"><h2 class="widget-title">Hits!</h2>		<ul>
+			<li>29,471 viewed</li>
+		</ul>
+		</section><section id="calendar-3" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>November 2011</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="https://nehagirme.wordpress.com/2011/10/">&laquo; Oct</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next"><a href="https://nehagirme.wordpress.com/2011/12/">Dec &raquo;</a></td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="1" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+	</tr>
+	<tr>
+		<td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+	</tr>
+	<tr>
+		<td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td><a href="https://nehagirme.wordpress.com/2011/11/19/" aria-label="Posts published on November 19, 2011">19</a></td><td>20</td>
+	</tr>
+	<tr>
+		<td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+	</tr>
+	<tr>
+		<td>28</td><td>29</td><td>30</td>
+		<td class="pad" colspan="4">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></section>	</aside><!-- .sidebar .widget-area -->
+
+		</div><!-- .site-content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			
+			<div class="site-info">
+								<span class="site-title"><a href="https://nehagirme.wordpress.com/" rel="home">Neha Girme</a></span>
+				<a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com.</a>
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<!--  -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201732y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-f17b1a286d9f407602bfd2aa6bda7132">
+	</div>
+	<div class="grofile-hash-map-5f573c8e567e89dc106dab67c4f7b488">
+	</div>
+	<div class="grofile-hash-map-f17b1a286d9f407602bfd2aa6bda7132">
+	</div>
+	<div class="grofile-hash-map-f22f27fdf96f9dec57ef579a0f222902">
+	</div>
+	<div class="grofile-hash-map-837cb039154447cc1fe50df28b74a31a">
+	</div>
+	<div class="grofile-hash-map-bde03462cf9050f8fdcb00353886dce6">
+	</div>
+	<div class="grofile-hash-map-d3a0d462b4dca9ab83f3a5c93a479f5b">
+	</div>
+	<div class="grofile-hash-map-8e726eecf8e5c25e98e96649f2908fc3">
+	</div>
+	<div class="grofile-hash-map-6658c541fb27e86516f7ed746d1e8ad0">
+	</div>
+	<div class="grofile-hash-map-4e7fe6791e8c22d51b61f04dfc4d2988">
+	</div>
+	<div class="grofile-hash-map-dad3df91d913e92f8802236a7ed6b276">
+	</div>
+	<div class="grofile-hash-map-8726f9de6b70c6d03b6b63e4e029f175">
+	</div>
+	<div class="grofile-hash-map-a7a87304aaaacecf7067982cae9d0c63">
+	</div>
+	<div class="grofile-hash-map-6402e4cf97ce687c4164644e3dec1aa7">
+	</div>
+	<div class="grofile-hash-map-66840b93ad90f5a4b61bc78a9fb4fb74">
+	</div>
+	<div class="grofile-hash-map-440386672d1093a4a9c94a98527202df">
+	</div>
+	<div class="grofile-hash-map-d58902f70b1334fcd75b169fe0c43a98">
+	</div>
+	<div class="grofile-hash-map-df460233591671df6862e6c51ef7d23c">
+	</div>
+	<div class="grofile-hash-map-2e9d4b36ac8c7ba5d5ebc7e8ab350812">
+	</div>
+	<div class="grofile-hash-map-1b0338513343a216d994b2a452ad7425">
+	</div>
+	<div class="grofile-hash-map-8e9b2473afe1893324a8c7ce7fa1fb04">
+	</div>
+	<div class="grofile-hash-map-76d3d911f7b5d2aab428fc67127456c0">
+	</div>
+	<div class="grofile-hash-map-15cf03425454383caeb03baadf8fbee5">
+	</div>
+	<div class="grofile-hash-map-411346cb53489290a643836de7a0ec2e">
+	</div>
+	<div class="grofile-hash-map-fa6dbb110c904f7ef567282c34dfb5be">
+	</div>
+	<div class="grofile-hash-map-b56767589a4719b267c717e9f8afbc67">
+	</div>
+	<div class="grofile-hash-map-6a11ee33ee47a4a5286825f59b6a3157">
+	</div>
+	<div class="grofile-hash-map-2ce6880febb2baafacbaa0c63b2bd745">
+	</div>
+	<div class="grofile-hash-map-6aa2d4ff0517253635c280e519fe77d7">
+	</div>
+	<div class="grofile-hash-map-766c11e4cfd1da5d94bb69349894ced4">
+	</div>
+	<div class="grofile-hash-map-ea862255c1998e3fdfd994401ee94ead">
+	</div>
+	<div class="grofile-hash-map-0ea8282a815910b828b2c3b4ac94afd5">
+	</div>
+	<div class="grofile-hash-map-7c979907059ebe53df7f6e5ed355c3e1">
+	</div>
+	<div class="grofile-hash-map-86a68d129074ab2e195656f5a225e61c">
+	</div>
+	<div class="grofile-hash-map-1089ef301663f9fd50b02997b6967c49">
+	</div>
+	<div class="grofile-hash-map-c23fe13437c34c53cae8b374f44ce9b3">
+	</div>
+	<div class="grofile-hash-map-aea66dbabf715c1b2d1e9b59dc919cd3">
+	</div>
+	<div class="grofile-hash-map-9982438f9f254a6ea68728e42a1057b5">
+	</div>
+	<div class="grofile-hash-map-860d787408659b5af844f0c54cfc3397">
+	</div>
+	<div class="grofile-hash-map-2d1446409b9f111710406a418c2043e5">
+	</div>
+	<div class="grofile-hash-map-61af5657fef2ec918360c77526e3cc62">
+	</div>
+	<div class="grofile-hash-map-f0d97b8309eeab491744e031385aab84">
+	</div>
+	<div class="grofile-hash-map-d19204003b3383724272660bb1a7288b">
+	</div>
+	<div class="grofile-hash-map-e1daf475735e7c710aa732c219516780">
+	</div>
+	<div class="grofile-hash-map-d4963d2fc9aef5a9c27f59112a74e5cf">
+	</div>
+	<div class="grofile-hash-map-e9da0f7544f34c019db5241414e5e1e2">
+	</div>
+	<div class="grofile-hash-map-69dc42a5d094924c85cdd27fec16ceaf">
+	</div>
+	<div class="grofile-hash-map-facfda20d8a3e2ee4fba838ba32c4fd7">
+	</div>
+	<div class="grofile-hash-map-c54dcfa0944bb5e8f3efc7c6d5fb1e81">
+	</div>
+	<div class="grofile-hash-map-5629cec2769e6e8c401ec344805ba370">
+	</div>
+	<div class="grofile-hash-map-9a007b869e01ab90db30aead7c752d54">
+	</div>
+	<div class="grofile-hash-map-89424cec64a414abb509a1ae6c971609">
+	</div>
+	<div class="grofile-hash-map-88d94a501bcad7cbff452084204e7c27">
+	</div>
+	<div class="grofile-hash-map-2c133577985fd2097861468af9afb81b">
+	</div>
+	<div class="grofile-hash-map-5a19e361cee87ffc071f91cd5208222d">
+	</div>
+	<div class="grofile-hash-map-6277243f50a592039250b5c6635a3da8">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/nehagirme.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/nehagirme.wordpress.com\/wp-login.php?action=logout&_wpnonce=6d3037f165","homeURL":"https:\/\/nehagirme.wordpress.com\/","postID":"201","gravDefault":"gravatar_default","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1479964158j'></script>
+
+	<div id="carousel-reblog-box">
+		<form action="#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post" />
+				<input type="hidden" id="carousel-reblog-blog-id" value="19408528" />
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://nehagirme.wordpress.com" />
+				<input type="hidden" id="carousel-reblog-blog-title" value="Neha Girme" />
+				<input type="hidden" id="carousel-reblog-post-url" value="" />
+				<input type="hidden" id="carousel-reblog-post-title" value="" />
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="a2e4843687" /><input type="hidden" name="_wp_http_referer" value="/2011/11/19/electromagnetic-flowmeter-design/" />		</form>
+
+		<div class="arrow"></div>
+	</div>
+<link rel='stylesheet' id='all-css-0-3' href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1481571546h' type='text/css' media='all' />
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"19408528","siteName":"Neha Girme","siteURL":"http:\/\/nehagirme.wordpress.com","icon":"<img alt='' src='https:\/\/s1.wp.com\/i\/logo\/wpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/twentysixteen","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/nehagirme.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fnehagirme.wordpress.com%2F2011%2F11%2F19%2Felectromagnetic-flowmeter-design%2F","themeURL":"https:\/\/wordpress.com\/theme\/twentysixteen\/","xhrURL":"https:\/\/nehagirme.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"aa5dd3b2c3","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"4be0da22d2\" \/>","referer":"https:\/\/nehagirme.wordpress.com\/2011\/11\/19\/electromagnetic-flowmeter-design\/","canFollow":"1","feedID":"17841240","statusMessage":"","customizeLink":"https:\/\/nehagirme.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fnehagirme.wordpress.com%2F2011%2F11%2F19%2Felectromagnetic-flowmeter-design%2F","postID":"201","shortlink":"http:\/\/wp.me\/p1jr2M-3f","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/nehagirme.wordpress.com\/201","statsLink":"https:\/\/wordpress.com\/stats\/post\/201\/nehagirme.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Twenty Sixteen","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 28 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/nehagirme.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fnehagirme.wordpress.com%2F2011%2F11%2F19%2Felectromagnetic-flowmeter-design%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/nehagirme.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"0d8e532d1c","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"0","login_url":"https:\/\/nehagirme.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fnehagirme.wordpress.com%2F2011%2F11%2F19%2Felectromagnetic-flowmeter-design%2F","blog_id":"19408528","local_comments_commenting_as":"<fieldset><label for=\"email\">Email<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=19408528&v=wpcom&tz=5&user_id=0&subd=nehagirme","is_public":"1","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyVkN1OwzAMhV8I193Qdod4FJSl7ub8Eyfb+vakE5QKTZW4inV87O84eEugYygUChrBga6sKd07Iy+4avkKydUzB0HHlgQ/K1W6qDA4yn/N5UK+WVI9Ybk1YRK+F6IwA8RyAsfBwhh1FRh5YXHQrg5tsNl09L5NQqbkps5z+A9jrEEXjkE2rlBDWwonldErKZRbBfFKOfOcYNG2NjwY84alenaJpN/wa920H8zT99OtXU9YWuVYhRwaKklpCz/CVj7L4qnAa9fjRyPjGLNv/nf/tjv0+92+Px6O5gu7B7+k'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "nehagirme.wordpress.com";
+	</script>
+	<script type="text/javascript" defer src="https://s.skimresources.com/js/725X1342.skimlinks.js"></script>		<iframe src='https://widgets.wp.com/likes/master.html?ver=20170206#ver=20170206' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="//stats.wp.com/w.js?56" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'19408528','blog_tz':'5','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'19408528','v':'wpcom','tz':'5','user_id':'0','post':'201','subd':'nehagirme'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdTdvUG14Q2VDQTR4LlUsLi82dU1mai9BMkRkM0xKb24/czlSS3dtaEsrWm5xbmRfVXJJK3xqaTFiQV94eStsTDQueERDVVJaUy5raytjJT8xJVNFaEJMK3dbZi41LWMxbTktNDlOLj8ybXlFQnlESFhLdy9nLjdpXSVMU3VZMnkzTysveF9CckIxWjldaDJiMEZaPzFLVy9kdDYwUjM9dnNQciU9dU9mNnZoaltrMUwxXXorOC1Uc0xBW3pRTDIvRkpaY2VNc3RJQk1ybltEb1VISytCW3FwRnB0TixNQWg5NmZNTVElaEtUX0xSTSZ4fmQwNDA5MkNJeVBIQ1kxTng0K2hONQ=='}]);
+_stq.push([ 'clickTrackerInit', '19408528', '201' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>
+<!--
+	generated in 0.237 seconds
+	197060 bytes batcached for 300 seconds
+-->
