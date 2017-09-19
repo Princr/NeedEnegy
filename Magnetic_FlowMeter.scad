@@ -14,7 +14,7 @@ module roundCornersCube(x,y,z,r);
 
 difference(){
     
-   
+  
     union(){
         
         translate([ 0 , 0 , 9]){
@@ -28,7 +28,7 @@ difference(){
                 outline(wall = 2) circle(d = 2);
             }
         }
-        
+         color("lime")
         rotate([-90 , 0 , 0]){
             translate([0 , 0 , -30]){
                 linear_extrude(height = 60){
@@ -36,7 +36,7 @@ difference(){
                 }
             }
         }
-
+             color("orange")
             rotate([-90 , 0 , 0]){
             translate([0 , 0, -50]){
                 linear_extrude(height = 100){
@@ -44,7 +44,7 @@ difference(){
                 }
             }
         }
-        
+         color("lime")
         rotate([-90 , 0 , 0]){
             translate([0 , 0, -20]){
                 linear_extrude(height = 40){
@@ -66,10 +66,39 @@ difference(){
 //   }    
 }
 
-
+ color("green")
  translate([7 , -20 , -5]){
      cube([5, 40 , 10], false) ;
  }
  
-
+ 
+ union(){
+     translate([ 100 , -20 , -5]){
+         cube([5, 40 , 10], false) ;
+     } 
+     
+     color("green")
+     rotate([0 , -90, 0]){
+      //1st corner
+     translate([ 4 , -19 , -105]){
+        cylinder( r = 1.2 ,h = 5);
+     }
+     //2nd corner
+     translate([ -4 , -19 , -105]){
+        cylinder( r = 1.2 ,h = 5);
+     }
+     
+     //3rd Corner
+     translate([ -4 , 19 , -105]){
+        cylinder( r = 1.2 ,h = 5);
+     }
+     
+     //4th Corner
+     translate([ 4 , 19 , -105]){
+        cylinder( r = 1.2 ,h = 5);
+     }
+    }
     
+ } 
+     
+ 
